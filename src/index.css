@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .bg-red-gradient {
+    background: linear-gradient(135deg, #DE4313 0%, #DE4313 0.75%, #DE4313 2.92%, #DE4414 6.37%, #DF4515 10.97%, #DF4816 16.59%, #E04B18 23.1%, #E1501B 30.37%, #E3561F 38.27%, #E55E24 46.66%, #E7682B 55.41%, #EB7533 64.39%, #EE843C 73.47%, #F39547 82.52%, #F8A954 91.41%, #FEC163 100%);
+  
+  }
+  .box {
+    position: relative;
+    background:#f9d1d1;
+    ;
+    border-radius: 8px;
+  }
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px; 
+    border-radius: 8px; 
+    
+    background:linear-gradient(135deg, #DE4313 0%, #DE4313 0.75%, #DE4313 2.92%, #DE4414 6.37%, #DF4515 10.97%, #DF4816 16.59%, #E04B18 23.1%, #E1501B 30.37%, #E3561F 38.27%, #E55E24 46.66%, #E7682B 55.41%, #EB7533 64.39%, #EE843C 73.47%, #F39547 82.52%, #F8A954 91.41%, #FEC163 100%);
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+  }
+  .success{
+    background: #47BA68;
+  }
+  .success-border{
+    border:2px solid #47BA68;
+  }
+  .JoinBtn-bg-gradient{
+    background: linear-gradient(266.79deg, #0c0a61 4.63%, #085f9e 100%);
+  }
+
+}
